@@ -1,8 +1,9 @@
 package base;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import pages.PageObjectManager;
-import utilities.LogsConfiguration;
+import utilities.LoggerConfig;
 
 import java.io.IOException;
 
@@ -11,11 +12,14 @@ public class ContextSetup {
     public WebDriver driver;
     public TestBase testBase;
     public PageObjectManager pageObjectManager;
-    LogsConfiguration logs;
+    public LoggerConfig loggerConfig;
+    public Logger logger;
 
     public ContextSetup() throws IOException {
         testBase = new TestBase();
-        pageObjectManager = new PageObjectManager(testBase.getDriver());
-        logs = new LogsConfiguration();
+        loggerConfig = new LoggerConfig();
+        testBase.setLogger(loggerConfig.getLogger());
+        logger = loggerConfig.getLogger();
+        pageObjectManager = new PageObjectManager(testBase.getDriver(), logger);
     }
 }

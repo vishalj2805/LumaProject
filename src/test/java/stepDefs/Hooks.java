@@ -15,7 +15,7 @@ public class Hooks {
 
     @After
     public void afterScenario() throws IOException {
-//        contextSetup.testBase.getDriver().quit();
+        contextSetup.testBase.getDriver().quit();
     }
 
 }
