@@ -26,27 +26,26 @@ public class CommonActions {
     }
 
 
-
-    public void click(By locator){
-            wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
+    public void click(By locator) {
+        wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
     }
 
-    public void enterText(String text, By locator){
-            wait.until(ExpectedConditions.elementToBeClickable(locator)).sendKeys(text);
+    public void enterText(String text, By locator) {
+        wait.until(ExpectedConditions.elementToBeClickable(locator)).sendKeys(text);
     }
 
-    public void verifyTitle(String expectedTitle){
+    public void verifyTitle(String expectedTitle) {
         Assert.assertEquals(driver.getTitle(), expectedTitle);
         logger.debug("Title Verified Successfully");
     }
 
-    public void verifyText(String actualText, String expectedText){
-        Assert.assertEquals(actualText,expectedText);
+    public void verifyText(String actualText, String expectedText) {
+        Assert.assertEquals(actualText, expectedText);
         logger.debug("Text Verified Successfully");
     }
 
-    public void verifyContainsText(String actualText, String expectedText){
-        if (actualText.contains(expectedText)){
+    public void verifyContainsText(String actualText, String expectedText) {
+        if (actualText.contains(expectedText)) {
             logger.debug("Text Verified Successfully");
             assert true;
         } else {
@@ -54,9 +53,9 @@ public class CommonActions {
             assert false;
         }
     }
-    
-    public String getText(By locator){
-        wait.until(ExpectedConditions.visibilityOf(driver.findElement(locator)));
+
+    public String getText(By locator) {
+        wait.until(driver -> !driver.findElement(locator).getText().trim().isEmpty());
         logger.debug("Fetched Text: " + driver.findElement(locator).getText());
         return driver.findElement(locator).getText();
     }

@@ -1,3 +1,4 @@
+
 Feature: Sign Up Functionality
 
   Background:

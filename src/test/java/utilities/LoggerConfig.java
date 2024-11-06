@@ -4,6 +4,8 @@ import base.TestBase;
 import org.apache.log4j.*;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
+import java.util.Date;
 
 public class LoggerConfig {
 
@@ -14,7 +16,7 @@ public class LoggerConfig {
         PatternLayout layout = new PatternLayout();
         layout.setConversionPattern("%d{yyyy-MM-dd HH:mm:ss} - %C - %M - %m%n");
         ConsoleAppender consoleAppender = new ConsoleAppender(layout);
-        FileAppender appender = new FileAppender(layout, System.getProperty("user.dir")+"/src/test/logs/log.txt", true);
+        DailyRollingFileAppender appender = new DailyRollingFileAppender(layout, System.getProperty("user.dir")+"/src/test/logs/log.txt","yyyy-MM-dd");
         logger.addAppender(appender);
         logger.addAppender(consoleAppender);
         logger.setLevel(Level.ALL);
