@@ -9,7 +9,6 @@ import java.io.IOException;
 
 public class ContextSetup {
 
-    public WebDriver driver;
     public TestBase testBase;
     public PageObjectManager pageObjectManager;
     public LoggerConfig loggerConfig;

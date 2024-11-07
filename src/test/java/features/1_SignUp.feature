@@ -15,4 +15,4 @@ Feature: Sign Up Functionality
 
     Examples:
       | First Name | Last Name | Email                 | Password       |
-      | Vishal     | Jadhav    | vishalj2805@vj.co.in | Vjadhav28 |
+      | Vishal     | Jadhav    | vishalj2805@vjaa.co.in | Vjadhav28 |

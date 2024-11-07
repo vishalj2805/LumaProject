@@ -55,7 +55,7 @@ public class CommonActions {
     }
 
     public String getText(By locator) {
-        wait.until(driver -> !driver.findElement(locator).getText().trim().isEmpty());
+        wait.until(driver -> !driver.findElement(locator).getText().isEmpty());
         logger.debug("Fetched Text: " + driver.findElement(locator).getText());
         return driver.findElement(locator).getText();
     }
