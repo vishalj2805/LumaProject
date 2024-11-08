@@ -23,20 +23,20 @@ public class LandingPage {
         this.logger = logger;
     }
 
-    public void clickOnCreateAnAccountLink(){
+    public void clickOnCreateAnAccountLink() {
         commonActions.click(landingPageObjects.createAnAccountLink);
         logger.debug("Clicked on Create An Account Link");
 
     }
 
-    public void clickOnSignInLink(){
+    public void clickOnSignInLink() {
         commonActions.click(landingPageObjects.signInLink);
         logger.debug("Clicked on Sign In Link");
 
 
     }
 
-    public String getSignInWelcomeMessage(){
+    public String getSignInWelcomeMessage() {
         String text = commonActions.getText(landingPageObjects.welcomeMessage);
         logger.debug("Fetched Text: " + text);
         return text;

@@ -36,3 +36,38 @@
 2024-11-07 13:51:06 - pages.LandingPage - getSignInWelcomeMessage - Fetched Text: Welcome, Vishal Jadhav!
 2024-11-07 13:51:06 - base.CommonActions - verifyContainsText - Text Verified Successfully
 2024-11-07 13:51:06 - base.CommonActions - verifyContainsText - Text Verified Successfully
+2024-11-07 13:55:18 - base.TestBase - getDriver - Chrome Browser Initiated
+2024-11-07 13:55:22 - base.TestBase - goToLandingPage - User Navigated to: https://magento.softwaretestingboard.com/
+2024-11-07 13:55:22 - base.CommonActions - verifyTitle - Title Verified Successfully
+2024-11-07 13:55:24 - pages.LandingPage - clickOnCreateAnAccountLink - Clicked on Create An Account Link
+2024-11-07 13:55:24 - base.CommonActions - verifyTitle - Title Verified Successfully
+2024-11-07 13:55:24 - pages.SignUpPage - enterFirstName - Entered First Name: Vishal
+2024-11-07 13:55:24 - pages.SignUpPage - enterLastName - Entered Last Name: Jadhav
+2024-11-07 13:55:24 - pages.SignUpPage - enterEmail - Entered Email: vishalj2805@vjaa.co.in
+2024-11-07 13:55:24 - pages.SignUpPage - enterPassword - Entered Password: Vjadhav28
+2024-11-07 13:55:24 - pages.SignUpPage - enterConfirmPassword - Entered Confirm Password: Vjadhav28
+2024-11-07 13:55:26 - pages.SignUpPage - clickOnCreateAnAccountButton - Clicked on Create An Account Button: 
+2024-11-07 13:55:39 - base.TestBase - getDriver - Chrome Browser Initiated
+2024-11-07 13:55:39 - base.TestBase - getDriver - Chrome Browser Initiated
+2024-11-07 13:55:44 - base.TestBase - goToLandingPage - User Navigated to: https://magento.softwaretestingboard.com/
+2024-11-07 13:55:44 - base.TestBase - goToLandingPage - User Navigated to: https://magento.softwaretestingboard.com/
+2024-11-07 13:55:44 - base.CommonActions - verifyTitle - Title Verified Successfully
+2024-11-07 13:55:44 - base.CommonActions - verifyTitle - Title Verified Successfully
+2024-11-07 13:55:47 - pages.LandingPage - clickOnSignInLink - Clicked on Sign In Link
+2024-11-07 13:55:47 - pages.LandingPage - clickOnSignInLink - Clicked on Sign In Link
+2024-11-07 13:55:47 - base.CommonActions - verifyTitle - Title Verified Successfully
+2024-11-07 13:55:47 - base.CommonActions - verifyTitle - Title Verified Successfully
+2024-11-07 13:55:47 - pages.SignInPage - enterEmail - Entered Email: vishalj2805@vj.co.in
+2024-11-07 13:55:47 - pages.SignInPage - enterEmail - Entered Email: vishalj2805@vj.co.in
+2024-11-07 13:55:47 - pages.SignInPage - enterPassword - Entered Password: Vjadhav28
+2024-11-07 13:55:47 - pages.SignInPage - enterPassword - Entered Password: Vjadhav28
+2024-11-07 13:55:49 - pages.SignInPage - clickOnSignInButton - Clicked on Sign In Button: 
+2024-11-07 13:55:49 - pages.SignInPage - clickOnSignInButton - Clicked on Sign In Button: 
+2024-11-07 13:55:49 - base.CommonActions - verifyTitle - Title Verified Successfully
+2024-11-07 13:55:49 - base.CommonActions - verifyTitle - Title Verified Successfully
+2024-11-07 13:55:50 - base.CommonActions - getText - Fetched Text: Welcome, Vishal Jadhav!
+2024-11-07 13:55:50 - base.CommonActions - getText - Fetched Text: Welcome, Vishal Jadhav!
+2024-11-07 13:55:50 - pages.LandingPage - getSignInWelcomeMessage - Fetched Text: Welcome, Vishal Jadhav!
+2024-11-07 13:55:50 - pages.LandingPage - getSignInWelcomeMessage - Fetched Text: Welcome, Vishal Jadhav!
+2024-11-07 13:55:50 - base.CommonActions - verifyContainsText - Text Verified Successfully
+2024-11-07 13:55:50 - base.CommonActions - verifyContainsText - Text Verified Successfully
